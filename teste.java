@@ -2,8 +2,8 @@
 
 public class teste{
     public static void main (String[]args){
-        int x = somar(5, 0);
-        System.out.println("Soma: " + x);
+        int x = multiplicar(5, 10);
+        System.out.println("5 x 10 = " + x);
     }
 
 
@@ -47,5 +47,14 @@ public class teste{
 
     }
 
-    public static 
+    public static int multiplicar(int num, int cont){
+        return multiplicar(num, cont, 0);
+
+    }
+
+    public static int multiplicar(int num, int cont, int resp){
+        if(cont == 0)
+            return resp;
+        return multiplicar(num, cont - 1, num + resp);
+    }
 }
