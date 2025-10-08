@@ -5,6 +5,9 @@ public class teste{
         int x = somar(5, 0);
         System.out.println("Soma: " + x);
     }
+
+
+
     public static void conta(int num){
         System.out.println(num);
         if(num < 10)
@@ -43,4 +46,6 @@ public class teste{
         return somar(num - 1, num + cont);
 
     }
+
+    public static 
 }
